@@ -7,4 +7,4 @@ let numPerDay;
 numPerDay=1
 let totalRequired
 totalRequired=(numPerDay*365)*(maxAge-age)
-document.write("You will need $totalRequired to last until the ripe old age of $maxAge")
+document.write(`You will need ${totalRequired} to last until the ripe old age of ${maxAge}`)
