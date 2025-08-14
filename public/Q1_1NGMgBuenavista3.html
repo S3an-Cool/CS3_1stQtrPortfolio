@@ -1,7 +1,8 @@
 </head>
 <body>
+</label> Enter your age
     <input id="age" />
-</label></br/>
+</br/>
 
 <label> Enter your Max age
     <input id="maxAge" />
@@ -11,10 +12,21 @@
     <input id="numPerDay" />
 </label></br/>
 
-<cp> Result:
-    <span id="resultHere"></span>
-</p>
-<button> Accept Input</button>
+<label> Enter type of snacks
+    <input id = "Type" />
+</label></br/>
 
-<script src="script2.js"></script>
+<button onclick="checkresult()"> Accept Input</button>
+<p>Result: <span id="result"> </span></p>
 </body>
+
+<script>
+    function checkresult() {
+        let numPerDay = document.getElementById("numPerDay").value;
+        let maxAge = document.getElementById("maxAge").value;
+        let age = document.getElementById("age").value;
+        let Type = document.getElementById("Type").value;
+        let resultHere = (Number(numPerDay) * 365 * (Number(maxAge)) - Number(age));
+        document.getElementById("result").innerHTML=`<b> You will need ${resultHere} ${Type} last you until the ripe old age of ${maxAge} </b>`
+    }
+</script>
