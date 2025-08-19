@@ -18,18 +18,17 @@
         <input id="sc">
     </br/>
 
-    <button onclick="totalMeal()"> Accept Input </button>
-    <p> Total Meal: <span id ="result"></span></p>
+    <button onclick="totalMeal()">Accept Input</button>
+    <p>Total Meal: <span id="result"></span></p>
 
     <script>
         function totalMeal() {
               // place your JS code here
-            var mp=document.parseFloat(getElementById("mp").value)
-            var Tip=document.parseFloat(getElementById("Tip").value)   
-            var sc=document.parseFloat(getElementById("sc").value)
-            var totalCost=(mp + tip + (sc / 100 * mp))
+            let mp = Number(document.getElementById("mp").value)
+            let Tip = Number(document.getElementById("Tip").value)
+            let sc = Number(document.getElementById("sc").value)
+            let totalCost = mp + Tip + (sc / 100 * mp)
             document.getElementById("result").innerHTML=`<b> ${totalCost.toFixed(2)} </b>`
-            // why is % an error??????????????
         }
     </script>
 
