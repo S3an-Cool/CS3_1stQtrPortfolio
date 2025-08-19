@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2> Q1 2nd Graded Exercise submitted by name of section</h2>
+
+    <!-- Enter your tags below until the script tag -->
+    <label>Meal Price: 
+        <input id="mp">
+    </br/>
+
+
+    <label>Tip: 
+        <input id="Tip">
+    </br/>
+
+
+    <label>Service Charge: 
+        <input id="sc">
+    </br/>
+
+    <button onclick="totalMeal()"> Accept Input </button>
+    <p> Total Meal: <span id ="result"></span></p>
+
+    <script>
+        function totalMeal() {
+              // place your JS code here
+            var mp=document.parseFloat(getElementById("mp").value)
+            var Tip=document.parseFloat(getElementById("Tip").value)   
+            var sc=document.parseFloat(getElementById("sc").value)
+            var totalCost=(mp + tip + (sc / 100 * mp))
+            document.getElementById("result").innerHTML=`<b> ${totalCost.toFixed(2)} </b>`
+            // why is % an error??????????????
+        }
+    </script>
+
+</body>
+</html>
