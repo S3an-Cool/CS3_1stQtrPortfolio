@@ -6,7 +6,7 @@ If statements are used in decision-making code. It checks a condition and if it 
 2. Relational Operators
  Relational operators are operators that compare two values (a, b) and return either true or false, or, 1 or 0. They come in many forms such as <, >, ==, and many more. They are essential when using If statements as they are used as conditions. For example in an if statement; if (1 < 5) {console.log(1+5)}, this would return 6 since 1 is less than
 
- 5. Logical Operators
+3. Logical Operators
 Logical Operators are operators that either negate a condition or combine two or more conditions and return either true or false. && means AND, I I means OR, and ! means NOT. You use them like writing a sentence; (1 > 5) &&(AND) (5 > 1) would return false since only one condition is true. Whereas if you use I I (OR) in the same statement, you will get true, since only one needs to be true. ! Negates a condition, meaning it reverses true to false and false to true.
 
 
